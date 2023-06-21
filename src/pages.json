@@ -5,13 +5,21 @@
     }
   ],
   "globalStyle": {
+    "navigationStyle": "custom",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uniapp-starter",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#ffffff",
     "usingComponents": {
       "van-button": "/wxcomponents/vant/button/index",
+      "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
+      "van-icon": "/wxcomponents/vant/icon/index",
       "ec-charts": "/wxcomponents/ec-canvas/ec-canvas"
+    }
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^custom-(.*)": "@/components/$1.vue"
     }
   }
 }

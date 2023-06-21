@@ -3,6 +3,15 @@ import { presetApplet, presetRemRpx, transformerApplet, transformerAttributify }
 
 export default defineConfig({
   presets: [presetApplet(), presetRemRpx()],
+  theme: {
+    colors: {
+      primary: '#157AFB',
+      normal: '#1D2129',
+      secondary: '#4E5969',
+      third: '#86909C',
+      disableColor: '#C9CDD4',
+    },
+  },
   rules: [
     // custom-margin
     [/^ml-(\d+)$/, ([, d]) => ({ 'margin-left': `${d}rpx` })],
@@ -27,5 +36,6 @@ export default defineConfig({
     'init-btn': 'border-none cursor-pointer outline-none',
     'space-between': 'flex flex-row justify-between items-center',
     'flex-start': 'flex flex-row justify-start items-center',
+    'center-item': 'flex flex-row justify-center items-center',
   },
 });

@@ -4,6 +4,9 @@ import eslintPlugin from 'vite-plugin-eslint';
 import Unocss from 'unocss/vite';
 import { resolve } from 'path';
 export default defineConfig({
+  build: {
+    sourcemap: true,
+  },
   plugins: [
     Uni(),
     eslintPlugin({

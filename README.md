@@ -11,6 +11,8 @@ uniapp 小程序启动模板
 - husky + lint-staged
 - pnpm
 - echarts
+- iconfont
+- 简单封装request
 
 ### 安装依赖
 

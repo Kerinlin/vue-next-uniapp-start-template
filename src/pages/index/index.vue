@@ -1,19 +1,16 @@
 <template>
-  <view class="flex flex-col items-center">
-    <view class="pt-4 text-red-500">{{ appStore.motto }}</view>
-    <van-button type="primary">主要按钮</van-button>
-    <view class="chart-container">
-      <CommChart :height="chartHeight.one" :options="chartOptions.one" />
+  <custom-base-container title="首页">
+    <view class="flex flex-col items-center">
+      <van-button type="primary">主要按钮</van-button>
+      <view class="chart-container">
+        <custom-line-chart :height="chartHeight.one" :options="chartOptions.one" />
+      </view>
     </view>
-  </view>
+  </custom-base-container>
 </template>
 
 <script setup>
-import { useAppStore } from '@/store/app';
-const appStore = useAppStore();
 import { ref } from 'vue';
-import CommChart from '@/components/Chart.vue';
-
 const chartHeight = ref({
   one: '300px',
 });
