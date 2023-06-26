@@ -34,7 +34,7 @@ const chartOptions = ref({
 <style lang="scss" scoped>
 .chart-container {
   width: 100%;
-  .chart-item{
+  .chart-item {
     width: 100%;
   }
 }
