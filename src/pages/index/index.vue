@@ -3,7 +3,7 @@
     <view class="flex flex-col items-center">
       <van-button type="primary">主要按钮</van-button>
       <view class="chart-container">
-        <custom-line-chart :height="chartHeight.one" :options="chartOptions.one" />
+        <custom-charts class="chart-item" height="240px" :options="chartOptions?.lineOptions"></custom-charts>
       </view>
     </view>
   </custom-base-container>
@@ -11,11 +11,8 @@
 
 <script setup>
 import { ref } from 'vue';
-const chartHeight = ref({
-  one: '300px',
-});
 const chartOptions = ref({
-  one: {
+  lineOptions: {
     xAxis: {
       type: 'category',
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -37,5 +34,8 @@ const chartOptions = ref({
 <style lang="scss" scoped>
 .chart-container {
   width: 100%;
+  .chart-item{
+    width: 100%;
+  }
 }
 </style>

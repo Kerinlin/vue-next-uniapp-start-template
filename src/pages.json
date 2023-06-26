@@ -12,8 +12,7 @@
     "usingComponents": {
       "van-button": "/wxcomponents/vant/button/index",
       "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
-      "van-icon": "/wxcomponents/vant/icon/index",
-      "ec-charts": "/wxcomponents/ec-canvas/ec-canvas"
+      "van-icon": "/wxcomponents/vant/icon/index"
     }
   },
   "easycom": {
